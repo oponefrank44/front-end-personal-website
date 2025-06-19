@@ -1,0 +1,25 @@
+
+.header-flex-Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    padding: var(--bodyPadding);
+    background-color: var(--PrimaryColor);
+    flex-direction: row;
+    
+}
+
+.moods{
+    height: 3rem;
+    width: 5rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+.svg-button{
+    background-color: var(--PrimaryColor);
+}

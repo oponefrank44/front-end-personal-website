@@ -1,0 +1,45 @@
+
+:root {
+  --PrimaryColor: #030303;
+  --SecondaryColor: #ffffff;
+
+  --PrimaryColorBlack: #030303;
+  --PrimaryColorWhite: #ffffff;
+  --PrimaryColorGray: #3C3A3A;
+  --PrimaryColorRed: #B03052;
+  --PrimaryColorMint: #E1F4F3;
+  --PrimaryColorYellow: #E6B31E;
+
+
+  --secondaryTertiaty: #5CB338;
+  --secondaryColorblack: #222222;
+  --secondaryColorGray: #838282;
+
+
+  --TextairyBlack: #3D3D3D;
+  --TextairyGray: #CACACA;
+  --bodyPadding: 2rem;
+
+}
+/* Removed invalid @function block */
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+html{
+  scroll-behavior: smooth;
+   font-size: 62.5%;
+}
+::selection{
+  color: var(--PrimaryColorRed);
+  background-color: var(--TextairyGray);
+}
+
+a,a:hover,a:active{
+  color: var(--SecondaryColor);
+}

@@ -1,0 +1,54 @@
+
+
+.noproject{
+    background-color: var(--PrimaryColor);
+    height: 50vh;
+
+}
+
+/* circle */
+
+.header-Main--floating-ball-outer {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--PrimaryColorYellow);
+  border-radius: 50%;
+ transform: translateX(10rem);
+
+  box-shadow: 0 0 10px var(--SecondaryColor), 0 0 20px var(--SecondaryColor),
+    0 0 30px var(--SecondaryColor);
+}
+.header-Main--floating-ball-outer::before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  left: -2.5rem;
+  top: -3rem;
+  border-left: 4px var(--SecondaryColor) solid;
+  border-radius: 50%;
+
+  animation: circle-motion 4s linear infinite;
+}
+.header-Main--floating-ball-outer::after {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  top: -7rem;
+    left: -8rem;
+  border-left: 4px var(--PrimaryColorRed) solid;
+  border-radius: 50%;
+  animation: circle-motion 4s linear infinite ;
+  animation-delay: 1s;
+}
+
+@keyframes circle-motion {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

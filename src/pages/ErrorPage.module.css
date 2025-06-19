@@ -1,0 +1,17 @@
+
+.errorpage{
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    height: 60vh;
+}
+.Errorhead{
+    font-size: 7rem;
+    align-self: center;
+    justify-self: center;
+    
+}
+.errorpage p{
+    font-size: 4rem;
+     align-self: center;
+    justify-self: center;
+}

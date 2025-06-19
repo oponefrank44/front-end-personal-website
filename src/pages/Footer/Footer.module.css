@@ -1,0 +1,34 @@
+
+
+.Footer{
+    background-color: var(--PrimaryColor);
+    height: 40vh;
+    color: var(--SecondaryColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 6rem;
+    padding-right: 7rem;
+    padding-top: 5rem;
+
+
+}
+
+.footerlogo{
+    padding: 2rem;
+}
+.ListItem{
+    padding: 1rem;
+}
+.ListItem:hover{
+    color: var(--PrimaryColorYellow);
+      border-bottom: var(--SecondaryColor) 2px solid ;
+     border-right: var(--SecondaryColor) 2px solid;
+     
+}
+
+
+.social{
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+}

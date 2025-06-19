@@ -1,0 +1,19 @@
+
+
+
+.errordiv{
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    background-color: var(--PrimaryColorRed);
+}
+.errordiveheading{
+    font-size: 3rem;
+    align-self: center;
+    justify-self: center;
+    
+}
+.errordiv p{
+    font-size: 2rem;
+     align-self: center;
+    justify-self: center;
+}

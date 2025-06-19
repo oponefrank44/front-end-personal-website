@@ -1,0 +1,15 @@
+.key-container{
+    background-color: var( --PrimaryColor);
+    color: var(--SecondaryColor);
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+
+    padding-left: var(--bodyPadding);
+    padding-right: var(--bodyPadding);
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    align-self: center;
+    justify-items: center;
+    
+}

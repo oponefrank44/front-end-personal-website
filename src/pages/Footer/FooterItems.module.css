@@ -1,0 +1,10 @@
+
+
+.footeritem{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    list-style: none;
+}
+

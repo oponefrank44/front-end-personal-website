@@ -1,0 +1,43 @@
+
+.blogcomponent{
+        color:var(--SecondaryColor);
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        
+}
+
+.blogcomponentheader{
+    font-size: 2rem;
+    border-top: 3px var(--SecondaryColor) groove;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  
+}
+.blogcomponentheader span{
+    font-size: 2rem;
+    
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.blogcomponentcontent{
+    border-bottom: 3px var(--SecondaryColor) groove;
+    padding: 2rem;
+}
+.blogcomponentcontent span{
+    font-size: 2rem;
+    
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.blogcomponent span{
+    padding: 2rem;
+}
+.blogcomponent h6{
+    padding-left: 2rem;
+    text-transform: uppercase;
+}

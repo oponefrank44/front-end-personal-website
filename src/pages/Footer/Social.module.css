@@ -1,0 +1,15 @@
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    list-style: none;
+   
+    
+}
+
+.socialItem{
+    cursor: pointer;
+    padding: 1rem;
+}

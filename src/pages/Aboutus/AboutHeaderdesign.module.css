@@ -1,0 +1,99 @@
+.about-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--PrimaryColor);
+}
+
+.about-container-inner {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  animation:  SideSwingSemiCircle 4s ease-in-out infinite alternate;
+}
+.about-container-inner::before {
+  content: "";
+  position: absolute;
+
+  width: 20rem;
+  height: 10rem;
+  background-color:var(--PrimaryColorRed);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  bottom: 0;
+}
+.about-container-outer {
+  position: relative;
+  transform: translateY(-20rem);
+}
+.about-container-outer::before {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-color:var( --PrimaryColorYellow);
+  border-radius: 50%;
+  top: 20rem;
+  animation:  RotatingCircle 4s ease-in-out infinite;
+}
+.about-container-outer::after {
+  content: "";
+  position: absolute;
+  width: 80rem;
+  height: 80rem;
+  background-color: var(--SecondaryColor);
+  border-radius: 50%;
+  left: 50%;
+  top: 80rem;
+  transform: translate(-50%, -50%);
+}
+.about-container-ball {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  top: 29%;
+  transform: translateY(5%) translateX(-3rem);
+
+  box-shadow: 0 0 10px var(--SecondaryColor), 0 0 20px var(--SecondaryColor),
+    0 0 30px var(--SecondaryColor), 0 0 40px var(--SecondaryColor);
+  animation: RollingBall 4s ease-in-out infinite alternate;
+}
+
+@keyframes RollingBall {
+  0% {
+    transform: translateY(5%) translateX(-3rem);
+  }
+  50% {
+    transform: translateY(5%) translateX(20rem);
+  }
+  100% {
+    transform: translateY(5%) translateX(-3rem);
+  }
+}
+
+@keyframes SideSwingSemiCircle {
+  0% {
+    transform:rotate(50deg) ;
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+@keyframes RotatingCircle {
+  0% {
+    transform:translateX(1.5rem);
+  }
+  50% {
+    transform:translateX(-1.5rem)
+  }
+  100% {
+   transform:translateX(1.5rem)
+  }
+}

@@ -1,0 +1,100 @@
+
+
+.blogcomponent{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--PrimaryColor);
+  
+    
+}
+.blogdesignHeader{
+    color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 6rem;
+  align-self: center;
+  justify-self: center;
+  padding: 7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+
+}
+
+.blogdesign{
+     display: flex;
+     flex-direction: row;
+     gap: 2rem;
+     align-content: center;
+     justify-content: center;
+     transform: translateY(15rem)
+}
+
+.blogdesign1{
+    width: 7rem;
+    height: 1rem;
+    background-color: var(--PrimaryColorRed);
+    transform: rotateX(15deg);
+    animation:Runner 2s linear infinite;
+    animation-delay: .5s;
+    opacity: 0;
+     box-shadow: 0 1px 0 var(--PrimaryColorRed), 0 2px 0 var(--PrimaryColorRed),
+    0 3px 0 var(--PrimaryColorRed), 0 4px 0 var(--PrimaryColorRed),
+    0 20px 5px var(--PrimaryColorRed);
+    
+
+
+}
+.blogdesign2{
+     width: 7rem;
+    height: 1rem;
+    background-color: var(--PrimaryColorYellow);
+     animation:Runner 2s linear infinite;
+     animation-delay: .8s;
+      opacity: 0;
+      box-shadow: 0 1px 0 var(--PrimaryColorYellow), 0 2px 0 var(--PrimaryColorYellow),
+    0 3px 0 var(--PrimaryColorYellow), 0 4px 0 var(--PrimaryColorYellow),
+    0 20px 5px var(--PrimaryColorYellow);
+}
+.blogdesign3{
+     width:7rem;
+    height: 1rem;
+    background-color: var(--SecondaryColor);
+     animation:Runner  2s linear infinite;
+     animation-delay: 1.2s;
+      opacity: 0;
+       box-shadow: 0 1px 0 var(--SecondaryColor), 0 2px 0 var(--SecondaryColor),
+    0 3px 0 var(--SecondaryColor), 0 4px 0 var(--SecondaryColor),
+    0 20px 5px var(--SecondaryColor);
+}
+
+
+
+@keyframes Runner{
+    0%{
+        opacity: 0;
+        transform: translateX(0)
+    }
+    50%{
+        opacity: 0;
+      transform: translateX(0)
+        
+
+    }
+    80%{
+         opacity: 1;
+        transform: translateX(0)
+
+    }
+
+
+    100%{
+        opacity: 1;
+         transform: translateX(2rem)
+    }
+
+    
+
+}
+    
+

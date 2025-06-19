@@ -1,0 +1,31 @@
+
+
+.shared-component{
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    padding-top: 6rem;
+    list-style: none;
+    
+}
+
+.shared-heading{
+    padding-top: 4rem;
+    font-size: 3rem;
+     font-family: "Source Serif 4", serif;
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+
+}
+.shared-children{
+    font-size: 2rem;
+    padding: 5rem;
+    text-transform: uppercase;
+}
+.contact-content-li{
+    font-family: 3rem;
+     font-family: "Source Serif 4", serif;
+     text-transform: uppercase;
+     padding-bottom: 2rem;
+}

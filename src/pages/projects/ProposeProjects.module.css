@@ -1,0 +1,64 @@
+.ProposedProjects {
+  padding: 2rem;
+  background-color: var(--PrimaryColor);
+  color: var(--SecondaryColor);
+}
+
+.ProposedProjectsheader {
+  color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 6rem;
+  align-self: center;
+  justify-self: center;
+  padding: 7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+.ProposedProjectsDeSign {
+  position: relative;
+
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+ 
+  width: 50%;
+  justify-self: center;
+  align-items: center;
+}
+.ProposedProjectsSign {
+  color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 6rem;
+  padding: 7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  animation: BounceBall 2s ease-in-out infinite alternate;
+  position: absolute;
+}
+
+
+.ProposedProjectsp{
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+@keyframes BounceBall {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2rem) skewX(15deg);
+  }
+  80% {
+    transform: translateY(0);
+    color: var(--PrimaryColor);
+  }
+  100% {
+    transform: translateY(2rem) skewX(15deg);
+    color: var(--PrimaryColor);
+  }
+}

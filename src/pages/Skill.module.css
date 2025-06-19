@@ -1,0 +1,26 @@
+
+.skillspage{
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+   
+}
+
+.skillsparagh{
+    padding-top: 4rem;
+    font-size: 3rem;
+     font-family: "Source Serif 4", serif;
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+
+}
+
+.skillimg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+}
+
+ 

@@ -1,0 +1,19 @@
+.testimony-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.testimony-head {
+  font-size: 7rem;
+  text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
+  letter-spacing: 0.5rem;
+  transition: all .3s;
+}
+.testimony-head:hover{
+  transform: skewX(-15deg) skewY(2deg) scale(1.1);
+  
+}

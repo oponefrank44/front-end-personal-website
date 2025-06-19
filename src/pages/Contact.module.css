@@ -1,0 +1,100 @@
+.contact {
+  background-color: var(--PrimaryColor);
+  color: var(--SecondaryColor);
+  padding-bottom: 6rem;
+}
+.contact-heading {
+  color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 6rem;
+  align-self: center;
+  justify-self: center;
+  padding: 7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+.contact-form-component {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form {
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+}
+.contact-form-heading {
+  padding-top: 4rem;
+  font-size: 6rem;
+  font-family: "Source Serif 4", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  align-items: center;
+  justify-self: center;
+}
+
+.error {
+  background-color: #ff0b55;
+  width: 100%;
+  height: 2rem;
+  color: #ffff;
+}
+.contactLabel{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+.contactFormfill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "fname  lname "
+    "email  subject "
+    " msg msg "
+    "btn   btn";
+}
+.contactfirstname {
+  grid: fname;
+
+  display: flex;
+  flex-direction: column;
+}
+.contactlastname {
+  grid-area: lname;
+
+  display: flex;
+  flex-direction: column;
+}
+.contactemail {
+  grid-area: email;
+
+  display: flex;
+  flex-direction: column;
+}
+.contactsubject {
+  grid-area: subject;
+
+  display: flex;
+  flex-direction: column;
+}
+.contactmessage {
+  grid-area: msg;
+  display: flex;
+  flex-direction: column;
+}
+.contactformbutton {
+  grid-area: btn;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-form-loader{
+  align-self: center;
+  justify-self: center;
+}
