@@ -1,8 +1,36 @@
+.header-flex-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  list-style: none;
+  overflow: hidden;
+  padding: var(--bodyPadding);
+  background-color: var(--PrimaryColor);
+  flex-direction: row;
+}
 
-.header-flex-Container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.moods {
+  height: 3rem;
+  width: 5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.svg-button {
+  background-color: var(--PrimaryColor);
+}
+.hamburger-checkbox {
+    display: none;
+ }
+
+@media screen and (max-width: 600px) {
+  .header-flex-Container {
+    display: grid;
+    grid-template-columns: [head-start]1fr [main] 1fr[head-end];
+    grid-template-rows: [head-start]1fr [main] 1fr[head-end];
+    align-content: space-between;
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -10,16 +38,130 @@
     overflow: hidden;
     padding: var(--bodyPadding);
     background-color: var(--PrimaryColor);
-    flex-direction: row;
+    position: relative;
+  }
+
+  .Logo {
+    grid-column-start: head-start;
+    grid-column-end: head-end;
+    grid-row-start: head-start;
+  }
+  .Navlists {
+    grid-row-start: main;
+    grid-column-start: head-start;
+    grid-column-end: main;
+    position: fixed;
+    align-self: flex-start;
+    margin-top: 2rem;
+  }
+  .moods {
+    grid-column-start: main;
+    grid-column-end: head-end;
+    grid-column-end: main;
+    justify-self: right;
+  }
+
+  .nav-menu {
+    display: none;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    background-color: var(--PrimaryColor);
+  }
+
+  .hamburger-checkbox {
+    display: none;
+  }
+  /*  */
+
+  .hamburger-checkbox:checked ~ .nav-menu {
+    display: flex;
+  }
+
+  .hamburger-icon {
+    position: relative;
+  }
+  .hamburger-icon,
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: var(--SecondaryColor);
+    display: inline-block;
+  
+  }
+
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: "";
+    position: absolute;
     
+  }
+  .hamburger-icon::before {
+    top: -8px;
+  }
+
+  .hamburger-icon::after {
+    top: 8px;
+  }
+
+  /* Adjust the hover effect as needed; here, only one declaration is kept */
+  .hamburger-checkbox:checked + .hamburger-button .hamburger-icon {
+    background-color: transparent;
+  }
+
+  .hamburger-checkbox:checked + .hamburger-button .hamburger-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .hamburger-checkbox:checked + .hamburger-button .hamburger-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
 }
 
-.moods{
-    height: 3rem;
-    width: 5rem;
-    cursor: pointer;
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .header-flex-Container {
+    display: grid;
+    grid-template-columns: [head-start]1fr [main] 1fr[head-end];
+    grid-template-rows: [head-start]1fr [main] 1fr[head-end];
+    align-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    list-style: none;
     overflow: hidden;
-}
-.svg-button{
+    padding: var(--bodyPadding);
     background-color: var(--PrimaryColor);
+    position: relative;
+  }
+
+  .Logo {
+    grid-column-start: head-start;
+    grid-column-end: head-end;
+    grid-row-start: head-start;
+  }
+  .Navlists {
+    grid-row-start: main;
+    grid-column-start: head-start;
+    grid-column-end: main;
+    position: fixed;
+    align-self: flex-start;
+    margin-top: 2rem;
+  }
+  .moods {
+    grid-column-start: main;
+    grid-column-end: head-end;
+    grid-column-end: main;
+    justify-self: right;
+  }
+
+  .hamburger-checkbox {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: none;
+  }
 }

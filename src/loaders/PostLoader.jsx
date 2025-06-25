@@ -4,7 +4,7 @@ import axios from "axios";
 
 
 export async function postLoader() {
-  const respond = await axios.get("http://localhost:3000/home/posts");
+  const respond = await axios.get("https://frankwebsite.onrender.com/posts");
   if (!respond) {
     throw new Error("An error occured")
   }
@@ -12,3 +12,4 @@ export async function postLoader() {
   
   return projects;
 }
+

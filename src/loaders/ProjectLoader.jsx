@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 export async function projectLoader() {
-  const respond = await axios.get("http://localhost:3000/home/projects");
+  const respond = await axios.get("https://frankwebsite.onrender.com/projects");
   if (!respond) {
     throw new Error("An error occured")
   }

@@ -42,8 +42,12 @@ export default function ProjectComponent({
         </Link>
       </h4>
       <h4 className={classes.projectwebsite}>
+      
         <span>website: </span>
-        {websiteLink}
+         <Link to= {websiteLink} target="blank">
+          {websiteLink}
+        </Link>
+       
       </h4>
       <h6 className={classes.projectupdate}>
         {" "}

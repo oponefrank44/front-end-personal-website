@@ -1,32 +1,25 @@
-
-
 .header-nav-item--dropdown {
   display: flex;
   flex-direction: row;
   align-items: center;
-    
 }
 .nav-items {
   display: flex;
   flex-direction: row;
-  text-align: center; 
+  text-align: center;
   justify-content: flex-end;
   text-decoration: none;
   list-style: none;
-  
-  
 
   overflow: hidden;
- 
+
   transition: all 0.3s ease-in-out;
-  
 }
 .nav-item {
   display: flex;
   align-items: center;
-   flex-shrink: 2;
+  flex-shrink: 2;
   flex-flow: row wrap;
-   
 }
 .header-nav-item-link {
   text-decoration: none;
@@ -35,29 +28,40 @@
   color: var(--SecondaryColor);
 }
 
-.header-nav-item-link-active{
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-right: 3rem;
-    color: var(--PrimaryColorYellow);
-    font-weight: bold;
-   
+.header-nav-item-link-active {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 3rem;
+  color: var(--PrimaryColorYellow);
+  font-weight: bold;
 }
 .header-nav-item-link:hover {
   text-decoration: none;
   font-size: 1.2rem;
-    color: var(--PrimaryColorYellow);
-     border-bottom: var(--SecondaryColor) 3px solid ;
-     border-right: var(--SecondaryColor) 3px solid;
-     padding: 0 .5rem;
-     transition: all 0.3s ease-in-out;
-     letter-spacing: .1rem;
-    
-  
+  color: var(--PrimaryColorYellow);
+  border-bottom: var(--SecondaryColor) 3px solid;
+  border-right: var(--SecondaryColor) 3px solid;
+  padding: 0 0.5rem;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.1rem;
 }
-.header-nav-item-link-div{
+.header-nav-item-link-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-items {
     display: flex;
-    align-items: center;
-    justify-content: center;
-   
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+    gap: 2rem;
+    overflow: hidden;
+
+    transition: all 0.3s ease-in-out;
+  }
 }

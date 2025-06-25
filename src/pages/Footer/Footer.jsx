@@ -4,6 +4,7 @@ import FooterItems from "./FooterItems";
 import { Footerlist1 } from "./FooterData";
 import { Footerlist2 } from "./FooterData";
 import Social from "./Social";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -17,28 +18,31 @@ export default function Footer() {
           <FooterItems>
             <div>
               {Footerlist1.map((item) => (
-                <li key={item.id} className={classes.ListItem}>
-                  {item.title}
-                </li>
+                <Link to={item.path}>
+                  <li key={item.id} className={classes.ListItem}>
+                    {item.title}
+                  </li>
+                </Link>
               ))}
             </div>
           </FooterItems>
         </div>
-        <div className={classes["services"]}>
+        <div className={classes["services1"]}>
           <FooterItems>
             <div>
               {Footerlist2.map((item) => (
-                <li key={item.id} className={classes.ListItem}>
-                  {item.title}
-                </li>
+                <Link to={item.path}>
+                  <li key={item.id} className={classes.ListItem}>
+                    {item.title}
+                  </li>
+                </Link>
               ))}
             </div>
           </FooterItems>
         </div>
-         <Social />
-      </div>
-      <div className={classes.social}>
-       
+        <div className={classes.social}>
+          <Social />
+        </div>
       </div>
     </footer>
   );

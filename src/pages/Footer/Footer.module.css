@@ -1,34 +1,146 @@
+.Footer {
+  background-color: var(--PrimaryColor);
+  height: 40vh;
+  color: var(--SecondaryColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 6rem;
+  padding-right: 7rem;
+  padding-top: 5rem;
+}
 
+.footerlogo {
+  padding: 2rem;
+}
+.ListItem {
+  padding: 1rem;
+}
+.ListItem:hover {
+  color: var(--PrimaryColorYellow);
+  border-bottom: var(--SecondaryColor) 2px solid;
+  border-right: var(--SecondaryColor) 2px solid;
+}
 
-.Footer{
+.social {
+  background-color: var(--PrimaryColor);
+  color: var(--SecondaryColor);
+}
+@media screen and (max-width: 600px) {
+  /* Add responsive styles here */
+  .Footer {
     background-color: var(--PrimaryColor);
-    height: 40vh;
     color: var(--SecondaryColor);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 6rem;
-    padding-right: 7rem;
-    padding-top: 5rem;
+    display: grid;
+    flex-direction: column;
+    justify-items: center;
+    align-self: center;
+    padding-right: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+     width: 100%;
+    height: 100%;
+  }
 
-
-}
-
-.footerlogo{
-    padding: 2rem;
-}
-.ListItem{
+  .ListItem {
     padding: 1rem;
-}
-.ListItem:hover{
-    color: var(--PrimaryColorYellow);
-      border-bottom: var(--SecondaryColor) 2px solid ;
-     border-right: var(--SecondaryColor) 2px solid;
-     
-}
-
-
-.social{
+    align-items: center;
+    justify-items: center;
+  }
+   .footerlogo{
+    width: 100%;
+    height: 100%;
+      background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+   }
+  .services {
     background-color: var(--PrimaryColor);
     color: var(--SecondaryColor);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+  .services1 {
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+  .ListItem:hover {
+    color: var(--PrimaryColorYellow);
+    border-bottom: var(--SecondaryColor) 2px solid;
+    border-right: var(--SecondaryColor) 2px solid;
+  }
+
+  .social {
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  /* Add responsive styles here */
+  .Footer {
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    display: grid;
+    grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
+    grid-template-rows: [main-start] 100px [content-start] 100px [content-end] 100px [main-end];
+    flex-direction: column;
+    justify-items: center;
+    align-self: center;
+    padding-right: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+  .footerlogo {
+    grid-column-start: main-start;
+    grid-row-start: main-start;
+    grid-row-end: main-end;
+  }
+  .ListItem {
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+  }
+  .services {
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    width: 100%;
+     grid-column-start: content-end;
+  grid-row-start: main-start;
+  grid-row-end: content-end;
+  }
+  .services1 {
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+     grid-column-start: content-start;
+  grid-row-start: main-start;
+  grid-row-end: content-start;
+  }
+  .ListItem:hover {
+    color: var(--PrimaryColorYellow);
+    border-bottom: var(--SecondaryColor) 2px solid;
+    border-right: var(--SecondaryColor) 2px solid;
+  }
+
+  .social {
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    padding-left: 1rem;
+    grid-column-start: content-start;
+  grid-column-end: main-end;
+  grid-row-start: content-end;
+  
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  /* Add responsive styles here */
+ 
 }

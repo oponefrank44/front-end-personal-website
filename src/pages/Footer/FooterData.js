@@ -7,14 +7,15 @@ export const Footerlist1 = [
     {
         id: 3,
         title: "skills",
-        path:"/skills",
+        path:"/projects/skills",
         cname: "nav-item",
     },
     {
         id: 4,
-        title: "About",
-        path:"/about",
+         title: "Blogs",
+        path:"/blogs",
         cname: "nav-item",
+       
     },
     {
         id: 5,
@@ -33,14 +34,15 @@ export const Footerlist2 = [
     },
     {
         id: 4,
-        title: "coming project",
-        path:"/coming project",
+        title: "FAQ",
+        path:"/projects/frequentaskquestion",
         cname: "nav-item",
     },
     {
         id: 5,
-        title: "Contact",
-        path:"/contact",
+         title: "About",
+        path:"/about",
         cname: "nav-item",
+       
     },
 ];
