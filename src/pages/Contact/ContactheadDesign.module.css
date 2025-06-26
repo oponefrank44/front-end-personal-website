@@ -55,3 +55,44 @@
          transform: scale(0);
     }
 }
+
+
+@media screen and (max-width:600px) {
+
+.contact-icon{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    background-color: var(--SecondaryColor);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.icon{
+    align-self: center;
+   
+    justify-self: center;
+}
+.contact-icon::before{
+   content: "";
+  top: -1.5rem;
+  left: -1.5rem;
+
+    width: 7rem;
+    height: 7rem;
+    border: 4px #5CB338 solid ;
+    border-radius: 50%;
+    position: absolute;
+    animation: RingBounce .8s linear infinite;
+
+}
+.contact-icon::after{
+   display: none;
+    
+}
+
+
+  
+}

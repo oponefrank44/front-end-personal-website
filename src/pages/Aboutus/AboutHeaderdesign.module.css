@@ -97,3 +97,41 @@
    transform:translateX(1.5rem)
   }
 }
+
+@media screen and (max-width:600px){
+  .about-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48vh;
+  overflow: hidden;
+  background-color: var(--PrimaryColor);
+}
+  .about-container-outer::after {
+  display: none;
+}
+  
+}
+
+@media screen and (min-width:601px) and (max-width:900px){
+  .about-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  overflow: hidden;
+  background-color: var(--PrimaryColor);
+}
+  .about-container-outer::after {
+   content: "";
+  position: absolute;
+  width: 60rem;
+  height: 80rem;
+  background-color: var(--SecondaryColor);
+  border-radius: 50%;
+  left: 50%;
+  top: 80rem;
+  transform: translate(-50%, -50%);
+}
+  
+}

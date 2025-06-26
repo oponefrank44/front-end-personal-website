@@ -1,125 +1,158 @@
-
 /* functionality */
-.key-point-card{
-  
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-    position: relative;
-    color: var(--PrimaryColor);
-     
-   
-   
-
-
+.key-point-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  color: var(--PrimaryColor);
 }
 
-.card-face{
-    background-color: var(--SecondaryColor);
-    
-       transition: all .7s ease;
-       position: absolute;
-    backface-visibility: hidden;
-    left: 0;
-    top: 0;
-    width:30rem;
-    height: 40rem;
-    
+.card-face {
+  background-color: var(--SecondaryColor);
 
-
+  transition: all 0.7s ease;
+  position: absolute;
+  backface-visibility: hidden;
+  left: 0;
+  top: 0;
+  width: 30rem;
+  height: 40rem;
 }
-.card-back{
-  
-     background-image: linear-gradient(to bottom right,  var(--PrimaryColorGray), var(--SecondaryColor));
-    transform: rotateY(180deg);
-    transition: all .7s ease;
-     width:30rem;
-    height: 40rem;
-   
+.card-back {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--PrimaryColorGray),
+    var(--SecondaryColor)
+  );
+  transform: rotateY(180deg);
+  transition: all 0.7s ease;
+  width: 30rem;
+  height: 40rem;
 }
 
-
-.key-point-card:hover .card-back{
-
-    transform: rotateY(0deg);
+.key-point-card:hover .card-back {
+  transform: rotateY(0deg);
 }
-.key-point-card:hover .card-face{
-
-    transform: rotateY(-180deg);
+.key-point-card:hover .card-face {
+  transform: rotateY(-180deg);
 }
 
 /* styling */
-.card-face{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3;
-    align-items: start;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow:0 1px 0 var(--secondaryColorGray), 0 2px 0 var(--secondaryColorGray),
-    0 3px 0 var(--secondaryColorGray), 0 4px 0 var(--secondaryColorGray),
-    0 20px 5px var(--secondaryColorGray);
-    overflow: hidden;
+.card-face {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3;
+  align-items: start;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 0 var(--secondaryColorGray),
+    0 2px 0 var(--secondaryColorGray), 0 3px 0 var(--secondaryColorGray),
+    0 4px 0 var(--secondaryColorGray), 0 20px 5px var(--secondaryColorGray);
+  overflow: hidden;
 }
 
-
-
-.card-face-img{
-    margin: -2rem;
-    width: 30rem;
-    height: 13rem;
-    background-size: cover;
-    
-    
-    
+.card-face-img {
+  margin: -2rem;
+  width: 30rem;
+  height: 13rem;
+  background-size: cover;
 }
 
-
-.card-face-heading{
-    font-size: 2rem;
-    text-transform: uppercase;
-    right: 0;
-    top: 12rem;
-    justify-content: end;
-    position: absolute;
-
+.card-face-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  right: 0;
+  top: 12rem;
+  justify-content: end;
+  position: absolute;
 }
-.colour-1{
-    
-    background-color: #5CB338;
-    padding: 2rem;
-    border-radius: 15px;
-
-
+.colour-1 {
+  background-color: #5cb338;
+  padding: 2rem;
+  border-radius: 15px;
 }
-.colour-2{
-    background-color: #FFD95F;
-     padding: 2rem;
-     border-radius: 15px;
+.colour-2 {
+  background-color: #ffd95f;
+  padding: 2rem;
+  border-radius: 15px;
 }
-.colour-3{
-    background-color: #4300FF;
-    border-radius: 15px;
-     padding: 2rem;
+.colour-3 {
+  background-color: #4300ff;
+  border-radius: 15px;
+  padding: 2rem;
 }
 
- /* back text */
+/* back text */
 
-.card-back{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 1rem;
-   
-    font-size: 1.2rem;
-    font-weight: 500;
+.card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.card-face-content{
-    align-self: center;
-    justify-self: center;
-    padding-top: 7rem;
+.card-face-content {
+  align-self: center;
+  justify-self: center;
+  padding-top: 7rem;
+}
 
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  /* Add responsive styles here */
+  .key-point-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  color: var(--PrimaryColor);
+}
+
+.card-face {
+  background-color: var(--SecondaryColor);
+
+  transition: all 0.7s ease;
+  position: absolute;
+  backface-visibility: hidden;
+  left: 0;
+  top: 0;
+   width: 100%;
+  height: 30rem;
+}
+.card-back {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--PrimaryColorGray),
+    var(--SecondaryColor)
+  );
+  transform: rotateY(180deg);
+  transition: all 0.7s ease;
+  width: 100%;
+  height: 30rem;
+}
+
+.key-point-card:hover .card-back {
+  transform: rotateY(0deg);
+}
+.key-point-card:hover .card-face {
+  transform: rotateY(-180deg);
+}
+
+/* styling */
+.card-face {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3;
+  align-items: start;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 0 var(--secondaryColorGray),
+    0 2px 0 var(--secondaryColorGray), 0 3px 0 var(--secondaryColorGray),
+    0 4px 0 var(--secondaryColorGray), 0 20px 5px var(--secondaryColorGray);
+  overflow: hidden;
+}
 }

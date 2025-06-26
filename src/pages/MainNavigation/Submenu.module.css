@@ -6,6 +6,7 @@
   font-weight: 600;
   padding: 1rem;
   background-color:var(--PrimaryColor);
+
 }
 
 .sub-nav-items-li {
@@ -57,7 +58,7 @@
   align-items: flex-start;
   color: var(--SecondaryColor);
   margin-left: 8rem;
-  z-index: 100;
+  z-index: 1000;
 }
 
 

@@ -132,9 +132,9 @@
     text-decoration: none;
     list-style: none;
     overflow: hidden;
-    padding: var(--bodyPadding);
+    padding: 3rem;
     background-color: var(--PrimaryColor);
-    position: relative;
+    
   }
 
   .Logo {
@@ -146,7 +146,6 @@
     grid-row-start: main;
     grid-column-start: head-start;
     grid-column-end: main;
-    position: fixed;
     align-self: flex-start;
     margin-top: 2rem;
   }

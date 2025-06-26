@@ -38,7 +38,15 @@
   animation: BounceBall 2s ease-in-out infinite alternate;
   position: absolute;
 }
-
+.ProposedProjectsDeSign {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ 
+  width: 100%;
+  justify-self: center;
+  align-items: center;
+}
 
 .ProposedProjectsp{
     justify-self: center;
@@ -61,4 +69,58 @@
     transform: translateY(2rem) skewX(15deg);
     color: var(--PrimaryColor);
   }
+}
+
+@media screen and (max-width:600px) {
+ 
+
+.ProposedProjectsSign {
+  color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  animation: BounceBall 2s ease-in-out infinite alternate;
+  position: absolute;
+}
+.ProposedProjectsheader {
+  color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 2rem;
+  align-self: center;
+  justify-self: center;
+  padding: 7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+  
+}
+@media screen and (min-width:600px) and(max-width:900px){
+ .ProposedProjectsSign {
+  color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  animation: BounceBall 2s ease-in-out infinite alternate;
+  position: absolute;
+}
+.ProposedProjectsheader {
+  color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  align-self: center;
+  justify-self: center;
+  padding: 7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+  
 }

@@ -32,3 +32,80 @@
     font-size: 2rem;
     font-weight: 800;
 }
+
+
+
+@media screen and (min-width:601px) and(max-width:900px){ 
+.skillComponent{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    padding: 2rem;
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    
+}
+.skillComponent p{
+   font-size: 1.2rem;
+   font-weight: 500;
+   text-wrap: unset;
+    
+}
+.skillitem{
+    display: flex;
+    flex-direction: column;
+    width:20rem;
+    padding: 3rem;
+}
+.skillimg{
+   width:20rem;
+   height: 20rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+}
+
+.skillheader{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+  
+}
+
+@media screen and (max-width:600px) {
+  
+
+.skillComponent{
+    display: flex;
+   flex-direction: column;
+    padding: 2rem;
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    
+}
+.skillComponent p{
+   font-size: 1.2rem;
+   font-weight: 500;
+   text-wrap: unset;
+    
+}
+.skillitem{
+    display: flex;
+    flex-direction: column;
+    width:40rem;
+    padding: 3rem;
+}
+.skillimg{
+   width:40rem;
+   height: 20rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+}
+
+.skillheader{
+    font-size: 2rem;
+    font-weight: 800;
+}
+  
+}

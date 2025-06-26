@@ -18,9 +18,47 @@
 
 .skillimg{
     width: 100%;
-    height: 100%;
+    height: 70%;
     background-size: cover;
     
 }
 
- 
+ @media screen and (min-width:601px) and(max-width:900px){
+  
+.skillsparagh{
+    padding-top: 4rem;
+    font-size: 2.5rem;
+     font-family: "Source Serif 4", serif;
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+
+}
+.skillimg{
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    
+}
+  
+}
+
+@media screen and (max-width:600px) {
+  .skillsparagh{
+    padding-top: 4rem;
+    font-size: 1rem;
+     font-family: "Source Serif 4", serif;
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+
+}
+  .skillimg{
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    
+}
+}

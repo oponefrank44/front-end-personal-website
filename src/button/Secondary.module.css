@@ -29,3 +29,30 @@
    color: var(--PrimaryColorWhite);
    box-shadow: 0 1px 0 var(--secondaryColorGray), 0 2px 0 var(--secondaryColorGray), 0 3px 0 var(--secondaryColorGray), 0 4px 2px var(--secondaryColorGray);
 }
+
+
+@media screen and (max-width:600px) {
+ .secondary {
+  background-color: var(--SecondaryColor);
+  width: 100%;
+  height: 4rem;
+  border-radius: 15px;
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: var(--PrimaryColor);
+  box-shadow: 0 1px 0 var(--secondaryColorGray), 0 2px 0 var(--secondaryColorGray), 0 3px 0 var(--secondaryColorGray), 0 4px 2px var(--secondaryColorGray);
+}
+
+
+.textairy {
+  background-color: var(--SecondaryColor);
+  width: 100%;
+  height: 4rem;
+  border-radius: 15px;
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: var(--PrimaryColor);
+  box-shadow: 0 1px 0 var(--secondaryColorGray), 0 2px 0 var(--secondaryColorGray), 0 3px 0 var(--secondaryColorGray), 0 4px 2px var(--secondaryColorGray);
+}
+
+}

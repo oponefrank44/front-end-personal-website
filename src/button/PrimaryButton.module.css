@@ -2,10 +2,8 @@
   background-color: var(--SecondaryColor);
   color: var(--PrimaryColor);
   border: none;
- 
-  
-  
-margin-top: 5rem;
+
+  margin-top: 5rem;
   padding: 2rem 5rem;
   border-radius: 5px;
   cursor: pointer;
@@ -13,36 +11,116 @@ margin-top: 5rem;
   width: 50%;
   transform: translate(50%, 70%);
   position: relative;
-
 }
-.primary-button-p{
-    font-size: 3rem;
-     text-transform: uppercase;
-    font-weight: 600;
-    color: var(--PrimaryColor);
-    text-align: center;
-   
+.primary-button-p {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--PrimaryColor);
+  text-align: center;
 }
 
-.primary-button::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.primary-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    border-radius: 25px;
-    background-color: var(--SecondaryColor);
-    z-index: -1;
-    transition: all 0.2s ease-in-out;
- 
+  border-radius: 25px;
+  background-color: var(--SecondaryColor);
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
 }
 
-   
-.primary-button:hover::after{
-    opacity: 0;
-    transform: scaleX(1.4) scaleY(1.6) 
-    
-   
+.primary-button:hover::after {
+  opacity: 0;
+  transform: scaleX(1.4) scaleY(1.6);
+}
+
+
+@media screen and (max-width: 600px) {
+ .primary-button {
+  background-color: var(--SecondaryColor);
+  color: var(--PrimaryColor);
+  border: none;
+
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  transform: translate(50%, 60%);
+  position: relative;
+}
+.primary-button-p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--PrimaryColor);
+  text-align: center;
+}
+
+.primary-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 25px;
+  background-color: var(--SecondaryColor);
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-button:hover::after {
+  opacity: 0;
+  transform: scaleX(1.4) scaleY(1.6);
+}
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .primary-button {
+    margin-left: 7rem;
+  background-color: var(--SecondaryColor);
+  color: var(--PrimaryColor);
+  border: none;
+
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  transform: translate(50%, 60%);
+  position: relative;
+}
+.primary-button-p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--PrimaryColor);
+  text-align: center;
+}
+
+.primary-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 25px;
+  background-color: var(--SecondaryColor);
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-button:hover::after {
+  opacity: 0;
+  transform: scaleX(1.4) scaleY(1.6);
+}
 }

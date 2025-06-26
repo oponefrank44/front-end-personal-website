@@ -17,3 +17,28 @@
   transform: skewX(-15deg) skewY(2deg) scale(1.1);
   
 }
+
+@media screen and (max-width:600px) {
+.testimony-head {
+  font-size: 3rem;
+  text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
+  letter-spacing: 0.5rem;
+  transition: all .3s;
+}
+
+
+  
+}
+@media screen and (min-width:601px) and (max-width:900px){
+  .testimony-head {
+  font-size: 5rem;
+  text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
+  letter-spacing: 0.5rem;
+  transition: all .3s;
+}
+
+}

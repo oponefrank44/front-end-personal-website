@@ -98,3 +98,35 @@
   align-self: center;
   justify-self: center;
 }
+
+@media screen and (max-width:600px) {
+  .contact-heading {
+  color: var(--SecondaryColor);
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  align-self: center;
+  justify-self: center;
+  padding: 4rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+  
+.contactFormfill {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.contact-content-l{
+  line-height: 3rem;
+  padding: 1rem;
+}
+.contact-form-heading{
+  font-size: 3rem;
+}
+.contactformbutton{
+  display: flex;
+  flex-direction: column;
+}
+}

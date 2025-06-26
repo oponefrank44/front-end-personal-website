@@ -13,3 +13,30 @@
     cursor: pointer;
     padding: 1rem;
 }
+@media screen and (max-width:350px) {
+.social{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-self: center;
+    justify-content: center;
+    list-style: none;
+   gap: 3rem;
+    
+}
+
+
+
+  
+}
+@media screen and (min-width:351px) and (max-width:600px){
+  .social{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-self: center;
+    justify-content: center;
+    list-style: none;
+   gap: 3rem;
+    
+}
+
+}
