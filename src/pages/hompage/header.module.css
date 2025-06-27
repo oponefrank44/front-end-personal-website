@@ -154,6 +154,7 @@
 }
 
 @media screen and (max-width: 600px) {
+  
   .header-Main--heading-container h1 {
     text-transform: uppercase;
     font-size: 3rem;
