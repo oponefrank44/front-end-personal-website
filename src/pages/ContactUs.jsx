@@ -10,6 +10,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import LoadingSpin from "./loadingspinner/loadingSpin";
 import ErrorHadling from "./sharedPages/Errorhandling";
+import ContactSuccess from "./Contact/succesful";
 
 export default function Contact() {
   const [errorMessage, setErrorMessage] = useState(null);
@@ -73,7 +74,7 @@ export default function Contact() {
     setPending(true);
     try {
       const response = await axios.post(
-        "http://localhost:3000/home/contact",
+        "http://localhost:3000/contact",
         inputValue,
         {
           headers: {
@@ -86,7 +87,7 @@ export default function Contact() {
         throw new Error(response.errorMessage);
       }
       setPending(false);
-      navigator("/");
+      navigator("/contact/success");
     } catch (error) {
       setPending(false)
       setErrorMessage(error.message);

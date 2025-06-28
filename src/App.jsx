@@ -20,6 +20,7 @@ import Blogs from "./pages/Blogs";
 // loader
 import { projectLoader } from "./loaders/ProjectLoader";
 import { postLoader } from "./loaders/PostLoader";
+import ContactSuccess from "./pages/Contact/succesful";
 
 
 const router = createBrowserRouter([
@@ -51,11 +52,12 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-    ],
+  {
+    path: "/contact",
+    children: [
+      { index: true, element: <Contact /> },
+      { path: "/contact/success", element: <ContactSuccess /> }
+    ]
   },
   {
     path: "/admin",
@@ -74,6 +76,8 @@ const router = createBrowserRouter([
       },
     ],
   },
+  ],
+}
 ]);
 
 function App() {
