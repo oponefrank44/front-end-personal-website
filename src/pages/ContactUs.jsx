@@ -74,7 +74,7 @@ export default function Contact() {
     setPending(true);
     try {
       const response = await axios.post(
-        "http://localhost:3000/contact",
+        "https://frankwebsite.onrender.com/contact",
         inputValue,
         {
           headers: {
