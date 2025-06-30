@@ -93,6 +93,7 @@
    text-wrap: unset;
    text-align: justify;
     hyphens: auto;
+    width:80%;
     
 }
 .skillitem{
@@ -102,7 +103,7 @@
     padding: 3rem;
 }
 .skillimg{
-   width:100%;
+   width:80%;
    height: 20rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
