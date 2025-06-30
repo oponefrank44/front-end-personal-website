@@ -29,23 +29,23 @@ function MainNavigation() {
         <div className={classes["Logo"]}>
           <Logo />
         </div>
-      <div className={classes["Navlists"]}>
-           <div className={classes["Navlist"]} >
-          <input
-            type="checkbox"
-            id="hamburger-toggle"
-            class={classes["hamburger-checkbox"]}
-          />
+        
+        <div className={classes["Navlists"]}>
+          <div className={classes["Navlist"]}>
+            <input
+              type="checkbox"
+              id="hamburger-toggle"
+              class={classes["hamburger-checkbox"]}
+            />
 
-          <label for="hamburger-toggle" class={classes["hamburger-button"]}>
-            <span class={classes["hamburger-icon"]}></span>
-          </label>
-          <div class={classes["nav-menu"]}>
-            <NavigationItems />
+            <label for="hamburger-toggle" class={classes["hamburger-button"]}>
+              <span class={classes["hamburger-icon"]}></span>
+            </label>
+            <div class={classes["nav-menu"]}>
+              <NavigationItems />
+            </div>
           </div>
         </div>
-      </div>
-       
 
         <div className={classes["moods"]}>
           {invertedcolour ? (

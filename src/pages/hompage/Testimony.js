@@ -6,7 +6,7 @@ const Testimonies = [
     id: 1,
     src: img,
     job: "Project Manager",
-    name: "Prince Ibie",
+    name: "Princess Ibie",
     review: `frank is a rare blend of technical depth and practical efficiency. 
     They took ownership of our legacy codebase, modernizing it with React optimizations and security patches that reduced vulnerabilities by 40%.
      Their work directly improved our app’s Lighthouse scores and user retention.`,

@@ -27,8 +27,8 @@
 
 .testimany-picture {
     margin-top: 2rem;
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 80%;
   grid-area: img;
   border-radius: 50%;
   padding: 2rem;
@@ -75,8 +75,8 @@
   grid-template-columns: 50% 10% 40%;
   grid-template-rows: 1fr 6rem 1fr;
   grid-template-areas:
-    "img img name"
-    "job job job"
+    "img img img"
+    "name job job"
     "review review review";
   width: 100%;
   height: 20%;

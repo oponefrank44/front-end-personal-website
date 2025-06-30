@@ -44,8 +44,11 @@
 
 }
 .shared-children{
-    font-size: .7rem;
+    font-size: 1rem;
+    font-weight: 400;
     padding: 5rem;
     text-transform: uppercase;
+    text-align: justify;
+    hyphens: auto;
 }
 }

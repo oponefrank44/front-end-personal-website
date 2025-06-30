@@ -82,7 +82,7 @@ export const subProjects = [
     },
     {
         id: 1,
-        title: "Coming prjects",
+        title: "Coming projects",
         path: "/projects/proposed",
         cname: "sub-nav-item",
     },

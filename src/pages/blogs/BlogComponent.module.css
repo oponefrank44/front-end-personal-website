@@ -26,6 +26,8 @@
 .blogcomponentcontent{
     border-bottom: 3px var(--SecondaryColor) groove;
     padding: 2rem;
+    text-align: justify;
+    hyphens: auto;
 }
 .blogcomponentcontent span{
     font-size: 2rem;

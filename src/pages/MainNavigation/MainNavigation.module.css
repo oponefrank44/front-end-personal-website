@@ -47,13 +47,14 @@
     grid-column-end: head-end;
     grid-row-start: head-start;
   }
+ 
   .Navlists {
     grid-row-start: main;
     grid-column-start: head-start;
     grid-column-end: main;
     position: fixed;
     align-self: flex-start;
-    margin-top: 2rem;
+  
   }
   .moods {
     grid-column-start: main;

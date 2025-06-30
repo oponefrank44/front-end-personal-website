@@ -12,6 +12,8 @@
    font-size: 1.2rem;
    font-weight: 500;
    text-wrap: unset;
+   text-align: justify;
+    hyphens: auto;
     
 }
 .skillitem{
@@ -48,6 +50,8 @@
    font-size: 1.2rem;
    font-weight: 500;
    text-wrap: unset;
+   text-align: justify;
+    hyphens: auto;
     
 }
 .skillitem{
@@ -87,6 +91,8 @@
    font-size: 1.2rem;
    font-weight: 500;
    text-wrap: unset;
+   text-align: justify;
+    hyphens: auto;
     
 }
 .skillitem{
@@ -96,7 +102,7 @@
     padding: 3rem;
 }
 .skillimg{
-   width:40rem;
+   width:100%;
    height: 20rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
